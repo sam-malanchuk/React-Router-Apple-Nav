@@ -4,41 +4,51 @@ import TopNav from './components/TopNav';
 
 const data = [
   {
-    name: "[logo]"
+    name: "[logo]", 
+    link: "/"
   },
   {
     name: "Mac",
-    links: ["MacBook", "MacBook Air", "iMac", "iMac Pro", "Mac Pro", "Mac mini", "Compare", "Pro Display XDR", "Accessories", "Mojave"]
+    children: ["MacBook", "MacBook Air", "iMac", "iMac Pro", "Mac Pro", "Mac mini", "Compare", "Pro Display XDR", "Accessories", "Mojave"],
+    link: "/mac"
   },
   {
     name: "iPad",
-    links: ["pad 1", "pad 2", "pad 3", "pad 4"]
+    children: ["pad 1", "pad 2", "pad 3", "pad 4"],
+    link: "/ipad"
   },
   {
     name: "iPhone",
-    links: ["phone 1", "phone 2", "phone 3", "phone 4"]
+    children: ["phone 1", "phone 2", "phone 3", "phone 4"],
+    link: "/iphone"
   },
   {
     name: "Watch",
-    links: ["watch 1", "watch 2", "watch 3", "watch 4"]
+    children: ["watch 1", "watch 2", "watch 3", "watch 4"],
+    link: "/watch"
   },
   {
     name: "TV",
-    links: ["TV 1", "TV 2", "TV 3", "TV 4"]
+    children: ["TV 1", "TV 2", "TV 3", "TV 4"],
+    link: "/tv"
   },
   {
     name: "Music",
-    links: ["Music 1", "Music 2", "Music 3", "Music 4"]
+    children: ["Music 1", "Music 2", "Music 3", "Music 4"],
+    link: "/music"
   },
   {
     name: "Support",
-    links: ["s 1", "s 2", "s 3", "s 4"]
+    children: ["s 1", "s 2", "s 3", "s 4"],
+    link: "/support"
   },
   {
-    name: "[search]"
+    name: "[search]",
+    link: "/"
   },
   {
-    name: "[bag]"
+    name: "[bag]",
+    link: "/"
   }
 ];
 
@@ -46,7 +56,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <TopNav />
+        <TopNav data={data} />
       </header>
       <div className="bodyContainer">
         App Body.

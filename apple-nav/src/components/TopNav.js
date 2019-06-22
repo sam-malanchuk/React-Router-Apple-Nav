@@ -1,18 +1,12 @@
-import React from "react";
+import React from 'react';
+import { LinkNav } from 'react-router-dom';
 
-function TopNav() {
+function TopNav(props) {
     return (
         <nav className="topNav">
-            <a href="/">[logo]</a>
-            <a href="/">Mac</a>
-            <a href="/">iPad</a>
-            <a href="/">iPhone</a>
-            <a href="/">Watch</a>
-            <a href="/">TV</a>
-            <a href="/">Music</a>
-            <a href="/">Support</a>
-            <a href="/">[search]</a>
-            <a href="/">[bag]</a>
+            {props.data.map(link => {
+                return <a href={link.link}>{link.name}</a>;
+            })}
         </nav>
     );
 };
