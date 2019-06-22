@@ -3,8 +3,18 @@ header {
   color: #fff;
 }
 
-header a {
+nav.topNav {
+  display: flex;
+  justify-content: space-around;
+  width: 1050px;
+  margin: 0 auto;
+}
+
+nav.topNav a {
+  display: inline-block;
   color: #fff;
+  text-decoration: none;
+  padding: 10px;
 }
 
 .bodyContainer {
