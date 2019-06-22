@@ -1,0 +1,22 @@
+header {
+  background-color: #282c34;
+  color: #fff;
+}
+
+nav.topNav {
+  display: flex;
+  justify-content: space-around;
+  width: 1050px;
+  margin: 0 auto;
+}
+
+nav.topNav a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.bodyContainer {
+  padding: 10px;
+}
